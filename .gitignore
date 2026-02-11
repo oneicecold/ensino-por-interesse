@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Temporary files
+.tmp/
+*.tmp
+*.log
+
+# OAuth credentials
+credentials.json
+token.json
+
+# Installer
+python_installer.exe

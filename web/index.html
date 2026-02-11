@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBL - Aprendizado por Interesse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo">INTEREST COMPASS</div>
+            <h1>Aprenda qualquer coisa<br>através do que você <span class="gradient-text">ama</span>.</h1>
+            <p class="subtitle">A metodologia IBL conecta tópicos complexos às suas paixões para um aprendizado instantâneo.</p>
+        </header>
+
+        <main>
+            <form id="ibl-form" class="glass-card">
+                <div class="input-group">
+                    <label for="topic">O que você quer aprender?</label>
+                    <input type="text" id="topic" placeholder="Ex: Leis de Newton, Python, História da Arte" required autocomplete="off">
+                </div>
+                
+                <div class="input-group">
+                    <label for="interest">Qual é a sua paixão?</label>
+                    <input type="text" id="interest" placeholder="Ex: Futebol, Minecraft, Culinária" required autocomplete="off">
+                </div>
+
+                <button type="submit" id="generate-btn">
+                    <span class="btn-text">Gerar Aula Personalizada</span>
+                    <span class="loader hidden"></span>
+                </button>
+            </form>
+
+            <div id="result-area" class="hidden">
+                <div class="glass-card result-card">
+                    <h2 id="result-title"></h2>
+                    <div id="result-content" class="markdown-body"></div>
+                    <button id="reset-btn" class="secondary-btn">Criar Nova Aula</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
